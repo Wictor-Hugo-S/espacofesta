@@ -1,0 +1,47 @@
+
+section.eventos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+  
+
+    .container-eventos{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+        padding: 0 2%;
+
+    }
+
+    .texto-eventos{
+
+        h1{
+            color: white;
+            font-size: 50px;
+            text-align: center;
+            padding-bottom: 30px;
+        }
+    }
+
+    .imagens-eventos{
+        display: flex;
+        justify-content: center;
+        
+        gap: 70px 30px;
+        cursor: pointer;
+        flex-wrap: wrap;
+       
+        width: 100%;
+        
+    
+       
+
+        img{
+          
+            width: 350px;
+            height: 250px;
+        }
+    }
+}

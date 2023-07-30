@@ -1,0 +1,395 @@
+.menu {
+
+    width: 100%;
+
+
+    height: auto;
+    z-index: 99999999;
+    //  background-image: linear-gradient(to bottom, #14a634 90%, #257235 100%); 
+   
+background-color: greenyellow;
+opacity: 0.9;
+    
+    /* color:#fb2f3f; */
+   
+
+
+
+
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+
+        padding: 10px;
+
+
+
+
+        .logo-menu {
+            width: 20%;
+            display: flex;
+            justify-content: center;
+            align-content: center;
+            z-index: 9999;
+
+
+
+            img {
+                width: 75%;
+                height: auto;
+                object-fit: contain;
+                cursor: pointer;
+                z-index: 9999;
+
+
+            }
+
+        }
+
+        .links {
+
+            display: flex;
+            gap: 20px;
+
+            a {
+                text-decoration: none;
+                font-family: Helvetica;
+                font-size: 14px;
+                text-transform: uppercase;
+                font-weight: bold;
+                z-index: 9999;
+                color: white;
+                transition: ease-in-out .4s;
+
+                &:hover {
+                    color: #f35c69;
+                    /* #fb2f3f */
+
+                    font-family: Helvetica;
+                }
+
+
+            }
+
+        }
+
+        .redes-sociais {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+
+            .wrapper-redes-sociais {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 10px;
+
+                font-size: 20px;
+                color: white;
+
+                .icons {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    font-size: 30px;
+                    gap: 10px;
+                    cursor: pointer;
+                }
+
+                .telephone {
+                    display: flex;
+                    gap: 8px;
+                }
+            }
+        }
+
+
+        .button-assine {
+            z-index: 999;
+
+
+            button {
+                font-size: 12px;
+                font-weight: 600;
+                text-transform: none;
+                background-color: #0c2633;
+                color: whitesmoke;
+                cursor: pointer;
+                border: none;
+                border-radius: 20px;
+                padding: 10px 28px 10px 28px;
+                transition: ease-in-out .4s;
+
+
+                &:hover {
+                    transform: scale(1.1);
+                    transition: ease-in-out .4s;
+
+                }
+
+            }
+
+
+        }
+
+
+        .menu-mobile {
+            display: none;
+            cursor: pointer;
+
+            gap: 20px;
+
+            .icon-close:hover {
+                background-color: #fb2f3f !important;
+                border-radius: 50% !important;
+
+            }
+
+            .icon-menu-navegacao:hover {
+                background-color: ghostwhite !important;
+            }
+
+        }
+
+
+
+
+
+
+
+    }
+}
+
+
+
+
+.container-menu-mobile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0c2633;
+    width: auto;
+    height: auto;
+    position: fixed;
+
+
+
+    .wrapper-menu-mobile {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px 0;
+        padding-top: 130px;
+        padding-bottom: 30px;
+
+        .redes-sociais {
+
+
+            .wrapper-redes-sociais {
+
+                flex-direction: column;
+
+
+            }
+        }
+
+
+
+
+
+    }
+
+    .links-mobile {
+
+
+        a {
+
+            text-decoration: none;
+            font-family: Helvetica;
+            font-size: 16px;
+            text-transform: uppercase;
+            color: white;
+            font-weight: bold;
+            z-index: 9999;
+            color: white;
+
+            transition: ease-in-out .4s;
+
+
+
+            &:hover {
+                color: #fb2f3f;
+            }
+
+        }
+    }
+
+
+
+}
+
+a.active {
+    color: #ffab00 !important;
+}
+
+
+
+@media screen and (max-width: 910px) {
+
+
+    .menu {
+
+        .container {
+
+
+            .links {
+                a {
+                    font-size: 14px;
+                }
+            }
+
+
+            .button-assine {
+
+                button {
+
+                    font-size: 12px;
+                    font-size: 12px;
+                    padding: 8px 15px 8px 15px;
+
+                }
+
+
+
+            }
+
+        }
+    }
+}
+
+@media screen and (max-width: 841px) {
+
+
+    .menu {
+
+        .container {
+
+
+            .links {
+                a {
+                    font-size: 12px;
+                }
+            }
+
+
+
+            .button-assine {
+
+                button {
+
+                    font-size: 12px;
+                    font-size: 12px;
+                    padding: 8px 15px 8px 15px;
+
+                }
+
+
+
+            }
+
+        }
+    }
+
+}
+
+
+@media screen and (max-width: 768px) {
+
+    .menu {
+        position: fixed;
+        
+
+        .container {
+
+
+
+
+
+            .logo-menu {
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                align-content: center;
+
+
+
+                img {
+                    width: 50%;
+                    height: 100%;
+
+
+                }
+            }
+
+            .links {
+                display: none;
+
+                a {
+                    display: none !important;
+                }
+            }
+
+            .redes-sociais {
+                display: none;
+            }
+
+            .button-assine {
+                display: none;
+            }
+
+            .menu-mobile {
+                display: block !important;
+
+            }
+
+        }
+    }
+
+    .container-menu-mobile {
+        position: sticky;
+
+        .links-mobile {
+            a {}
+        }
+
+    }
+
+
+
+
+
+}
+
+@media screen and (max-width: 468px) {
+
+    .menu {
+        .logo-menu {
+            width: 70%;
+
+            img {
+                width: 80%;
+                height: 100%;
+
+            }
+
+        }
+
+    }
+
+
+
+
+}

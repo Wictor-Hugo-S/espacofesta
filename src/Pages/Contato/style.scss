@@ -1,0 +1,82 @@
+
+
+section.duvidas{
+    width: 100%;
+    margin-bottom: 80px;
+
+    .container-duvidas{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 50px;
+    }
+
+    .title-duvidas{
+        h1{
+            color: white;
+            font-size: 50px;
+            font-family: Verdana;
+        }
+    }
+
+    .wrapper-duvidas{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap:10px;
+
+        .box-duvidas{
+            display: flex;
+            
+            gap:5px;
+            
+          
+
+            .pergunta{
+                span{
+                    font-size: 20px;
+                    color: white;
+                    cursor: pointer;
+                }
+            }
+            .icon-duvidas{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+              
+                color: white;
+            }
+        }
+
+        .respotas{
+
+            p{
+                text-align: justify;
+                width: 100%;
+                color: greenyellow;
+                font-size: 18px;
+                max-width: 600px;
+              
+            }
+        }
+
+        .texto-duvida{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 30px;
+
+            h1{
+                color: white;
+                font-size: 50px;
+                padding-top: 50px;
+            }
+
+            button{
+                background-color: greenyellow;
+                color: black;
+            }
+        }
+    }
+}

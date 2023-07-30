@@ -1,0 +1,23 @@
+:root {}
+
+.border-bottom {
+  border: 1px solid rgb(94, 128, 0);
+  width: 100%;
+  margin-top: 25px;
+}
+
+a {
+  text-decoration: none;
+
+}
+
+a:hover {
+  color: #535bf2;
+
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+}
